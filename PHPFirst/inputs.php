@@ -4,4 +4,5 @@
     $checkbox = $_POST["checkbox"] ?? "off";
     echo "Checkbox: ".$checkbox."<br>";
     echo "Radio: ".$_POST["radio"]."<br>";
+    echo "Color: ".$_POST["color"]."<br>";
 ?>
