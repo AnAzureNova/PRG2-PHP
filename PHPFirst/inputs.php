@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="out.css">
 <?php
     echo "Text: ".$_POST["text"]."<br>";
     echo "Range: ". $_POST["range"]."<br>";
