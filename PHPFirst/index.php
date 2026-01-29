@@ -6,8 +6,9 @@
     <title>Document</title>
  </head>
  <body>
-    <form action="inputs.php" method="get">
+    <form action="inputs.php" method="post">
         <label for="text">TEXT: </label><input id="text" name="text" type="text">
+        <label for="range">RANGE: </label><input id="range" name="range" type="range">
     </form>
  </body>
  </html>
