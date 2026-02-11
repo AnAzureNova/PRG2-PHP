@@ -9,6 +9,7 @@
     <?php
         session_start();
         include "../DU2/comps/header.php";
+        include "../DU2/comps/staticdata.php";
         if (isset($_SESSION["user"])) {
             $user = unserialize($_SESSION["user"]);
             echo "Name: " . $user->name . "<br>";
@@ -19,8 +20,9 @@
     ?>
     <section>
         <p>Temp</p>
-        <a href="login.php">LOGIN</a>
-        <a href="register.php">REGISTER</a>
+        <a href="login.php">LOGIN</a><br>
+        <a href="register.php">REGISTER</a><br><br>
+        <a href="clrtemp.php">CLEAR SESSION</a>
     </section>
 </body>
 </html>

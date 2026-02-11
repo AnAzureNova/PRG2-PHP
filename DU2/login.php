@@ -7,10 +7,11 @@
 </head>
 <body>
     <?php
+    session_start();
+    include "../DU2/comps/staticdata.php";
     function loginCheck($currUsr, $currPass): bool{
-        session_start();
         $user = new User();
-        $user->setUser("User Name", $currUsr, $currPass, "1");
+        $user->setUser("User Name", $currUsr, $currPass, 1);
         $_SESSION["user"] = serialize($user);
         $_SESSION["isLoggedIn"] = true;
         return true;
