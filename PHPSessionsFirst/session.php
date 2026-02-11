@@ -7,6 +7,11 @@
 </head>
 <body>
     <?php
+        function logoutUser(){
+            session_unset();
+            session_destroy();
+            header("Location: index.php");
+        }
         echo "GOT: ".$_POST["usr"].", ".$_POST["psw"];
         session_start();
         if ($_POST["usr"] == "admin" && $_POST["psw"] == "admin"){
@@ -20,9 +25,7 @@
             echo "<br><br>LOGGED IN: ".$user." PASS: ".$password;
             echo "<form action='' method='get'><input type='submit' name='logout' value='logout'></form>";
             if(isset($_GET["logout"])){
-                session_unset();
-                session_destroy();
-                //header("Location: http://localhost:8081/PHPSessionsFirst/index.php");
+                logoutUser();
             }
         }
         else{
@@ -31,7 +34,7 @@
             if(isset($_GET["back"])){
                 session_unset();
                 session_destroy();
-                header("Location: http://localhost:8081/PHPSessionsFirst/index.php");
+                header("Location: index.php");
             }
         }
     ?>

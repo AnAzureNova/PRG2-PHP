@@ -6,16 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <p>TEMP</p>
-            <p>TEMP</p>
-            <p>TEMP</p>
-            <p>TEMP</p>
-        </nav>
-    </header>
+    <?php
+        include "../DU2/comps/header.php";
+    ?>
     <section>
-        
+        <p>Temp</p>
+        <a href="login.php">LOGIN</a>
     </section>
 </body>
 </html>
