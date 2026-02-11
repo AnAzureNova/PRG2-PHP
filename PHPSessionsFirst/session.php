@@ -22,7 +22,7 @@
             if(isset($_GET["logout"])){
                 session_unset();
                 session_destroy();
-                header("Location: http://localhost:8081/PHPSessions/index.php");
+                //header("Location: http://localhost:8081/PHPSessionsFirst/index.php");
             }
         }
         else{
@@ -31,7 +31,7 @@
             if(isset($_GET["back"])){
                 session_unset();
                 session_destroy();
-                header("Location: http://localhost:8081/PHPSessions/index.php");
+                header("Location: http://localhost:8081/PHPSessionsFirst/index.php");
             }
         }
     ?>
